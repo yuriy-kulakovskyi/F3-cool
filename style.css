@@ -1,0 +1,92 @@
+* {
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%; height: 100vh;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    font-family: monospace;
+    color: #333;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    width: 350px; height: 40px;
+    padding: 10px; margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    border: 2px solid transparent;
+    box-shadow: 0 0 4px #888;
+}
+
+button {
+    width: 120px; height: 40px;
+    background: rgb(71, 200, 203);
+    background: #1593ed;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 900; font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+input:focus {
+    border: 2px solid #1593ed;
+}
+
+button:hover {
+    background-color: #096db5;
+}
+
+button:active {
+    top: 3px;
+}
+
+.logo {
+    width: 100px; height: 100px;
+    background-image: url("https://androidprogrammi.ru/wp-content/uploads/2021/02/cool_f3.png");
+    position: fixed;
+    top: 50px;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 10px green;
+}
+
+.question {
+    font-size: 30px;
+    margin-bottom: 20px;
+    background-color: #3ff266;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:600px) {
+    .question {
+        background-color: red;
+        margin-top: 100px;
+    }
+
+    form {
+        width: 90%;
+        position: relative;
+    }
+}
