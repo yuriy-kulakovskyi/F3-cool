@@ -60,6 +60,18 @@ button:active {
     top: 3px;
 }
 
+p {
+    font-size: 20px!important;
+    color: gray;
+    font-weight: 600;
+}
+
+.choose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo {
     width: 100px; height: 100px;
     background-image: url("https://androidprogrammi.ru/wp-content/uploads/2021/02/cool_f3.png");
@@ -112,16 +124,22 @@ button:active {
 }
 
 @keyframes status {
-0% {
-    opacity: 1;
-    pointer-events: all;
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
 }
-90% {
-    opacity: 1;
-    pointer-events: all;
-}
-100% {
-    opacity: 0;
-    pointer-events: none;
-}
+
+@media (max-width: 750px) {
+    .choose {
+        flex-direction: column;
+    }
 }
