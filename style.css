@@ -89,12 +89,25 @@ p {
     color: #333;
     padding: 5px 10px;
     border-radius: 10px;
+    text-align: center;
 }
 
 @media screen and (max-width:600px) {
     .question {
         background-color: red;
         margin-top: 170px;
+    }
+    
+    #login {
+        margin-top: 60px;
+    }
+    
+    #password {
+        margin-top: 30px;
+    }
+    
+    #sendMessage {
+        height: 50px;
     }
 
     form {
@@ -141,5 +154,9 @@ p {
 @media (max-width: 750px) {
     .choose {
         flex-direction: column;
+    }
+
+    #phone_num {
+        margin-bottom: 50px;
     }
 }
